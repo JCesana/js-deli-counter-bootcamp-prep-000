@@ -12,7 +12,7 @@ function nowServing(customerLine) {
     return "There is nobody waiting to be served!";
   } else {
     customerLine.shift();
-    return nextCustomer;
+    return `Currently serving ${nextCustomer}.`;
   }
 }
 
