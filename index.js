@@ -2,6 +2,8 @@ var katzDeli = [];
 
 function takeANumber(customerLine, name) {
   customerLine.push(name);
+  
+  return `Welcome, ${name}. You are number ${
 }
 
 function nowServing() {
