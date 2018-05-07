@@ -5,13 +5,13 @@ function takeANumber(customerLine, name) {
   return `Welcome, ${name}. You are number ${customerLine.length} in line.`;
 }
 
-function nowServing() {
-  var nextCustomer = katzDeli[0];
+function nowServing(customerLine) {
+  var nextCustomer = customerLine[0];
   
-  if (katzDeli.length === 0) {
+  if (customerLine.length === 0) {
     return "There is nobody waiting to be served!";
   } else {
-    katzDeli.shift();
+    customerLine.shift();
     return nextCustomer;
   }
 }
