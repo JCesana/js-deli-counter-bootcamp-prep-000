@@ -26,6 +26,6 @@ function currentLine(customerLine) {
       line += `${i + 1}. ${customerLine[i]}, `;
     }
   }
-  line.slice(0, line.length - 1);
-  return line;
+  
+  return line.slice(0, line.length - 1);
 }
