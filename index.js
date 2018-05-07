@@ -26,4 +26,5 @@ function currentLine(customerLine) {
       line += `${i + 1} ${customerLine[i]}, `;
     }
   }
+  return line;
 }
