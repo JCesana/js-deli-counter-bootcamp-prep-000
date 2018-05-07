@@ -23,8 +23,9 @@ function currentLine(customerLine) {
     return "The line is currently empty.";
   } else {
     for (let i = 0; i < customerLine.length; i++) {
-      line += `${i + 1} ${customerLine[i]}, `;
+      line += `${i + 1}. ${customerLine[i]}, `;
     }
   }
+  line.slice(0, line.length - 1);
   return line;
 }
