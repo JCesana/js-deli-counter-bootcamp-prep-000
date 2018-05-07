@@ -27,5 +27,5 @@ function currentLine(customerLine) {
     }
   }
   
-  return line.slice(0, line.length - 1);
+  return line.slice(0, line.length - 2);
 }
